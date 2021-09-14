@@ -10,9 +10,9 @@ userRouter.get(
   expressAsyncHandler(async (req, res) => {
     try {
       const user = new User({
-        name: 'admin',
-        email: 'admin@example.com',
-        password: 'jsamazona',
+        name: '',
+        email: '',
+        password: '',
         isAdmin: true,
       });
       const createdUser = await user.save();
